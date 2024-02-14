@@ -39,6 +39,46 @@
       </div>
     </div>
 
+    <div id="groupSelectScreen" class="w-svh h-svh hidden justify-between flex-col">
+      <header
+        class="w-full h-32 flex px-16 justify-between items-center bg-original-primary text-white rounded-b-2xl"
+      >
+        <img style="height: 6rem" src="./assets/design2.png" alt="" />
+
+        <div id="usernameAndLogout">
+          <span id="username">Username</span>
+          <svg onclick="logoutUser()"
+            xmlns="https://www.w3.org/2000/svg"
+            width="36"
+            height="32"
+            viewBox="0 0 36 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M26.75 23L33.75 16M33.75 16L26.75 9M33.75 16H9.25M19.75 23V24.75C19.75 26.1424 19.1969 27.4777 18.2123 28.4623C17.2277 29.4469 15.8924 30 14.5 30H7.5C6.10761 30 4.77226 29.4469 3.78769 28.4623C2.80312 27.4777 2.25 26.1424 2.25 24.75V7.25C2.25 5.85761 2.80312 4.52226 3.78769 3.53769C4.77226 2.55312 6.10761 2 7.5 2H14.5C15.8924 2 17.2277 2.55312 18.2123 3.53769C19.1969 4.52226 19.75 5.85761 19.75 7.25V9"
+              stroke="#F7FCFA"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </header>
+
+      <div id="groupList">
+        <div class="groupListItems">
+          <div id="group1">
+            <p>Group 1</p>
+            <button onclick="joinGroup(1)">Join</button>
+          </div>
+          <div id="group2">
+            <p>Group 2</p>
+            <button onclick="joinGroup(1)">Join</button>
+          </div>
+      </div>
+    </div>
+
     <div id="chatScreen" class="w-svh h-svh hidden justify-between flex-col">
       <header
         class="w-full h-32 flex px-16 justify-between items-center bg-original-primary text-white rounded-b-2xl"
